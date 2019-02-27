@@ -7,4 +7,5 @@ hyperloglogs，地理空间(geospatial)的索引半径查询和流。Redis内置
 你可以在这些类型上运行原子操作，例如追加字符串(appending to a string)；在hash中自增值(incrementing the value in a hash)；向对列中压如一个元素(pushing an element to a list)；计算set交集
 (computing set intersection)，并集(union)和差集(difference);或者在sorted set中获取最高排名的成员。
 
-
+为了实现它的出色的性能，Redis使用内存中的数据集。基于你的使用场景，你有两种持久化的方法，一个是每隔一段时间将数据转存到磁盘，另一种是将每个命令追加到日志中。持久化可以选择性的关闭，如果你只需要一个功能丰富的、联网的
+内存缓存。
