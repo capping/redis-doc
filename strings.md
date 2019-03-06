@@ -39,3 +39,29 @@ OK
 > get mykey
 "somevalue"
 ```
+
+如你所见，使用SET和GET命令是我们设置和检索字符串值的方式。注意S，如果键已经村组，ET将替换已存储在键中的任何现有值，即使该键和非字符串值关联。
+
+值可以是任何类型的字符串(包括二进制数据)，例如你可以在值中存储jpeg图像。一个值不能大于512M。
+
+SET命令有有趣的选项，它们作为附加参数提供。例如：如果键已经存在，我可能会让SET命令失败，或者相反，它只会在键存在的情况下成功。
+```
+> set mykey newval nx
+(nil)
+> set mykey newval xx
+OK
+```
+即使字符串是Redis的基本值，也可以使用它们执行一些有趣的操作。例如：一个是原子性的增量
+```
+> set counter 100
+OK
+> incr counter
+(integer) 101
+> incr counter
+(integer) 102
+> incrby counter 50
+(integer) 152
+```
+INCR命令将字符串值解析为整数，将其递增1，最后将得到的值设置为新值。还有其它类似的命令INCRBY，DECR和DECRBY。在内部，它总是相同的命令，只是方式略有不同。
+
+INCR是原子的意味着什么？
