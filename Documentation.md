@@ -7,3 +7,8 @@
 - Redis实现的命令的完整列表(The full list of commands)，以及他们各自的详细文档
 - Pipelining:学习如何同时发送多个命令，节省往返时间
 - Redis Pub/Sub:Redis是一个快速的、稳定的发布/订阅消息系统！看过来。
+- Redis Lua scripting:Redis Lua脚本功能文档
+- Debugging Lua scripts:Redis 3.2 为Redis引入了一个本地的Lua调试器
+- Memory optimization:了解Redis如何使用RAM，并学习一些技巧来减少内存的使用
+- Expires:Redis允许为每个key设置不同的生存时间，以便秘钥过期时自动从服务器删除
+- Redis as a LRU cache:如何配置和使用Redis作为缓存与固定数量的内存和自动回收key
