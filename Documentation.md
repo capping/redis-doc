@@ -19,3 +19,16 @@
 - Redis keyspace notifications: Get notifications of keyspace events via Pub/Sub (Redis 2.8 or greater)
 - Creating secondary indexes with Redis:使用Redis数据结构创建辅助索引、组合索引和遍历图
 
+## Redis modules API
+
+- Introduction to Redis modules:这是一个学习Redis 4.0 模块编程的好地方
+- Implementing native data types:
+
+## Tutorials & FAQ
+
+- [Introduction to Redis data types](./Introduction.md):这是学习Redis API和数据模型的一个很好的起点
+- Introdiction to Redis streams:详细描述了Redis 5的新数据类型，流
+- Writing a simple Twitter clone with PHP and Redis
+- Auto complete with Redis
+- Data types short summary:Redis支持的不同类型的值的简短摘要，不像本节中列出的第一个教程那样更新和信息丰富。
+- FAQ:关于Redis的一些常见问题
